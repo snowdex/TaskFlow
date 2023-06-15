@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #151E3D, #2C3E4C);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    margin: 20px auto 40px;
+    padding: 20px 30px 70px;
+    border: 2px solid #2C3E4C;
+    border-radius: 20px;
+}
+
+.todo-app h2{
+    color: darkslateblue;
+    margin: 20px auto 30px;
+}
+
+.todo-app h2 img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+
+}
+input{
+    flex: 1;
+    border: 2px solid #2C3E4C;
+    border-radius: 15px;
+    outline:none;
+    padding: 10px;
+    margin-right: 20px;
+    background: #2C3E4C;
+}
+
+button{
+    border: none;
+    outline:none;
+    padding: 16px 20px;
+    background-clip: text;
+    background: linear-gradient(to right, #5621f3,
+                    #c508ff, #cf2368, #44eeb2);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    border: 2px solid #151E3D;
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 30px;
+    border: 2px solid #2C3E4C;
+    margin: 20px 0px;
+    border-radius: 30px;
+    color: aliceblue;
+    background: #2C3E4C;
+    position: relative;
+}
+
+ul li.checked{
+    color: green;
+    text-decoration: line-through;
+}
+
+ul li:hover{
+    background: #151E3D;
+    border-color: #151E3D;
+}
+
+ul li span{
+    position: absolute;
+    text-align: center;
+    right: 45px;
+    top: 20px;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+ul li span:hover{
+    align-items: center;
+    border: 2px solid #900D09;
+    background: #900D09;
+    border-radius: 10px;
+    font-size: 17px;
+}
